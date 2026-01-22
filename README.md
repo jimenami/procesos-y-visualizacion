@@ -24,6 +24,7 @@ cosas/
 ├── dashboard.py                       # Dashboard principal de Streamlit
 |── filename.hpl                      # Archivo hop de la unión de csv
 ├── TrabajoFinal1.ipynb               # Notebook de análisis y extracción de datos
+|── football-data.co.uk_notes.txt.pdf # Explicación de cada columna del SP1.csv
 ├── predicciones.ipynb                # Notebook con modelos predictivos
 ├── inputs/                           # Datos de entrada
 │   ├── SP1.csv                       # Datos originales de La Liga
