@@ -122,6 +122,7 @@ def load_data():
     df["Date"] = pd.to_datetime(df["Date"], dayfirst=True, errors="coerce")
     df["Time"] = pd.to_datetime(df["Time"], format="%H:%M", errors="coerce").dt.time
     df["Goles_Totales"] = df["FTHG"] + df["FTAG"]
+    df["Dif_goles_local"] = df["FTHG"] - df["FTAG"]
     df["Over_2_5"] = df["Goles_Totales"] > 2.5
     df["Resultado"] = df["FTR"].map({"H": "Gana Local","D": "Empate","A": "Gana Visitante"})
     df["Tarjetas"] = df["HY"] + df["AY"] + df["HR"] + df["AR"]
@@ -371,9 +372,9 @@ elif pagina == "🗺️ Estadios & Asistencia":
 # ======================================================
 elif pagina == "💰 Mercado de Apuestas":
     st.subheader("Análisis del Mercado de Apuestas")
-    fig = px.scatter(df_filt, x="AvgH", y="Goles_Totales", title="Cuota Media Local vs Goles")
+    fig = px.scatter(df_filt, x="AvgH", y="Dif_goles_local", title="Cuota Media Local vs Goles")
     st.plotly_chart(fig, width="stretch")
-    st.caption("Relaciona las expectativas del mercado (cuotas) con los resultados reales de goles.")
+    st.caption("Relaciona las expectativas del mercado (cuotas) con la diferencia de goles entre el equipo local y el visitante.")
 
     fig2 = px.violin(df_filt, x="Resultado", y="Cuota_Resultado", box=True, points="all", title="Cuota Esperada del Resultado Real", labels={"Resultado": "Resultado Final", "Cuota_Resultado": "Cuota Media Asociada"})
     st.plotly_chart(fig2, width="stretch")
