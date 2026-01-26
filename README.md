@@ -4,14 +4,12 @@
 procesos-y-visualizacion/
 ├── README.md                          # Este archivo
 ├── Informe Final.pdf                  # Informe del Proyecto presentado
-├── VISUALIZACIONES_DASHBOARD.md       # Galería de capturas del dashboard
 ├── requirements.txt                   # Dependencias del proyecto
 ├── dashboard.py                       # Dashboard principal de Streamlit
 ├── filename.hpl                       # Archivo hop de la unión de csv
 ├── football-data.co.uk_notes.txt.pdf  # Explicación de cada columna del SP1.csv
 ├── TrabajoFinal1.ipynb                # Notebook de análisis y extracción de datos
 ├── predicciones.ipynb                 # Notebook con modelos predictivos
-├── capturas/                          # Capturas de pantalla del dashboard
 ├── inputs/                            # Datos de entrada
 │   ├── SP1.csv                        # Datos originales de La Liga
 │   └── hop.txt.csv                    # Datos resultantes de la unión con hop
@@ -50,11 +48,7 @@ Enlace para la visualización del dashboard interactivo sin necesidad de ejecuta
 - **TrabajoFinal1.ipynb**: Notebook principal del preproceso y recolección de los datos
 - **predicciones.ipynb**: Notebook de los Modelos de Machine Learning y evaluación de predicciones
 - **dashboard.py**: Archivo Python del dashboard interactivo de las visualizaciones
-
-### Documentación Visual
-
-- **VISUALIZACIONES_DASHBOARD.md**: Galería con capturas de pantalla de todas las visualizaciones del dashboard (para la selección de todos los equipos durante toda la temporada), útil para revisar el contenido sin ejecutar el código 
-
+  
 ## Requisitos Previos
 
 - **Python 3.8 o superior** (recomendado 3.11)
