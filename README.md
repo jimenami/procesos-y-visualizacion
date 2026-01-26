@@ -30,7 +30,7 @@ procesos-y-visualizacion/
 ├── capturas/                          # Capturas de pantalla del dashboard
 ├── inputs/                            # Datos de entrada
 │   ├── SP1.csv                        # Datos originales de La Liga
-│   └── hop.txt.csv                    # Datos adicionales
+│   └── hop.txt.csv                    # Datos resultantes de la unión con hop
 ├── outputs/                           # Datos procesados
 │   ├── SP1_Normalizado.csv            # Datos normalizados
 │   ├── datos_asistencia_media_estadios.csv
@@ -61,12 +61,14 @@ El dashboard incluye las siguientes secciones:
 
 ### Notebooks de Análisis
 
-- **TrabajoFinal1.ipynb**: Notebook principal con extracción de datos climáticos, normalización y análisis exploratorio
-- **predicciones.ipynb**: Modelos de Machine Learning y evaluación de predicciones
+- **TrabajoFinal1.ipynb**: Notebook principal del preproceso y recolección de los datos
+- **predicciones.ipynb**: Notebook de los Modelos de Machine Learning y evaluación de predicciones
+- **dashboard.py**: Archivo Python del dashboard interactivo de las visualizaciones
 
 ### Documentación Visual
 
-- **VISUALIZACIONES_DASHBOARD.md**: Galería con capturas de pantalla de todas las visualizaciones del dashboard, útil para revisar el contenido sin ejecutar el código
+- Enlace para la visualización del dashboard interactivo sin necesidad de ejecutar el código: https://dashboardtrabajofinal.streamlit.app/ 
+- **VISUALIZACIONES_DASHBOARD.md**: Galería con capturas de pantalla de todas las visualizaciones del dashboard (para la selección de todos los equipos durante toda la temporada), útil para revisar el contenido sin ejecutar el código 
 
 ## Requisitos Previos
 
