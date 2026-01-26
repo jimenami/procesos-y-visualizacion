@@ -3,6 +3,7 @@
 ```
 procesos-y-visualizacion/
 ├── README.md                          # Este archivo
+├── Informe Final.pdf                  # Informe del Proyecto presentado
 ├── VISUALIZACIONES_DASHBOARD.md       # Galería de capturas del dashboard
 ├── requirements.txt                   # Dependencias del proyecto
 ├── dashboard.py                       # Dashboard principal de Streamlit
