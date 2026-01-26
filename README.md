@@ -1,36 +1,18 @@
-# Dashboard Interactivo - La Liga 24-25
-
-Dashboard interactivo desarrollado con Streamlit para el análisis de datos de la temporada 24-25 de La Liga española. Incluye análisis de resultados, clima, asistencia, apuestas deportivas y modelos predictivos de Machine Learning.
-
-## Descripción del Proyecto
-
-Este proyecto proporciona un análisis completo de la temporada 24-25 de La Liga española mediante:
-
-- **Visualizaciones interactivas** de partidos, resultados y estadísticas
-- **Análisis climático** con emojis del tiempo y códigos WMO
-- **Mapas interactivos** de estadios y asistencia
-- **Análisis de apuestas** y sorpresas deportivas
-- **Modelos de Machine Learning** para:
-  - Predicción de resultados de partidos (Victoria Local/Empate/Victoria Visitante)
-  - Predicción de asistencia a partidos
-- **Google Trends** para análisis del "hype" de los equipos
-
 ## Estructura del Proyecto
 
 ```
 procesos-y-visualizacion/
 ├── README.md                          # Este archivo
-├── VISUALIZACIONES_DASHBOARD.md       # Galería de capturas del dashboard
+├── Informe.pdf                        # Informe del Proyecto presentado
 ├── requirements.txt                   # Dependencias del proyecto
 ├── dashboard.py                       # Dashboard principal de Streamlit
 ├── filename.hpl                       # Archivo hop de la unión de csv
 ├── football-data.co.uk_notes.txt.pdf  # Explicación de cada columna del SP1.csv
 ├── TrabajoFinal1.ipynb                # Notebook de análisis y extracción de datos
 ├── predicciones.ipynb                 # Notebook con modelos predictivos
-├── capturas/                          # Capturas de pantalla del dashboard
 ├── inputs/                            # Datos de entrada
 │   ├── SP1.csv                        # Datos originales de La Liga
-│   └── hop.txt.csv                    # Datos adicionales
+│   └── hop.txt.csv                    # Datos resultantes de la unión con hop
 ├── outputs/                           # Datos procesados
 │   ├── SP1_Normalizado.csv            # Datos normalizados
 │   ├── datos_asistencia_media_estadios.csv
@@ -45,7 +27,7 @@ procesos-y-visualizacion/
 
 ### Dashboard Interactivo (dashboard.py)
 
-El dashboard incluye las siguientes secciones:
+Dashboard interactivo desarrollado con Streamlit para el análisis de datos de la temporada 24-25 de La Liga. El dashboard incluye las siguientes secciones:
 
 1. **Resultados**: Análisis de goles, resultados por equipo y estadísticas generales
 2. **Apuestas**: Visualización de cuotas, sorpresas deportivas y análisis de probabilidades
@@ -59,15 +41,14 @@ El dashboard incluye las siguientes secciones:
    - Matrices de confusión y análisis de errores
    - Distribución de probabilidades y residuos
 
+Enlace para la visualización del dashboard interactivo sin necesidad de ejecutar el código: https://dashboardtrabajofinal.streamlit.app/ 
+
 ### Notebooks de Análisis
 
-- **TrabajoFinal1.ipynb**: Notebook principal con extracción de datos climáticos, normalización y análisis exploratorio
-- **predicciones.ipynb**: Modelos de Machine Learning y evaluación de predicciones
-
-### Documentación Visual
-
-- **VISUALIZACIONES_DASHBOARD.md**: Galería con capturas de pantalla de todas las visualizaciones del dashboard, útil para revisar el contenido sin ejecutar el código
-
+- **TrabajoFinal1.ipynb**: Notebook principal del preproceso y recolección de los datos
+- **predicciones.ipynb**: Notebook de los Modelos de Machine Learning y evaluación de predicciones
+- **dashboard.py**: Archivo Python del dashboard interactivo de las visualizaciones
+  
 ## Requisitos Previos
 
 - **Python 3.8 o superior** (recomendado 3.11)
