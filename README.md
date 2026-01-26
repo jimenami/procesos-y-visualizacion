@@ -18,25 +18,27 @@ Este proyecto proporciona un análisis completo de la temporada 24-25 de La Liga
 ## Estructura del Proyecto
 
 ```
-cosas/
+procesos-y-visualizacion/
 ├── README.md                          # Este archivo
+├── VISUALIZACIONES_DASHBOARD.md       # Galería de capturas del dashboard
 ├── requirements.txt                   # Dependencias del proyecto
 ├── dashboard.py                       # Dashboard principal de Streamlit
-|── filename.hpl                      # Archivo hop de la unión de csv
-|── football-data.co.uk_notes.txt.pdf # Explicación de cada columna del SP1.csv
-├── TrabajoFinal1.ipynb               # Notebook de análisis y extracción de datos
-|── football-data.co.uk_notes.txt.pdf # Explicación de cada columna del SP1.csv
-├── predicciones.ipynb                # Notebook con modelos predictivos
-├── inputs/                           # Datos de entrada
-│   ├── SP1.csv                       # Datos originales de La Liga
-│   └── hop.txt.csv                   # Datos adicionales
-├── outputs/                          # Datos procesados
-│   ├── SP1_Normalizado.csv           # Datos normalizados
+├── filename.hpl                       # Archivo hop de la unión de csv
+├── football-data.co.uk_notes.txt.pdf  # Explicación de cada columna del SP1.csv
+├── TrabajoFinal1.ipynb                # Notebook de análisis y extracción de datos
+├── predicciones.ipynb                 # Notebook con modelos predictivos
+├── capturas/                          # Capturas de pantalla del dashboard
+├── inputs/                            # Datos de entrada
+│   ├── SP1.csv                        # Datos originales de La Liga
+│   └── hop.txt.csv                    # Datos adicionales
+├── outputs/                           # Datos procesados
+│   ├── SP1_Normalizado.csv            # Datos normalizados
 │   ├── datos_asistencia_media_estadios.csv
-│   ├── datos_coordenadas.csv         # Coordenadas de estadios
-│   ├── partidos_completo_con_hype.csv
-│   └── partidos_con_clima_completo.csv  # Dataset principal con clima
-└── venv/                             # Entorno virtual (no incluído en git)
+│   ├── datos_coordenadas.csv          # Coordenadas de estadios
+│   ├── datos_partidos_asistencia.csv  # Datos de asistencia por partido
+│   ├── partidos_completo_con_hype.csv # Datos con Google Trends
+│   └── partidos_con_clima_completo.csv # Dataset principal con clima
+└── venv/                              # Entorno virtual (no incluido en git)
 ```
 
 ## Características Principales
@@ -62,6 +64,10 @@ El dashboard incluye las siguientes secciones:
 - **TrabajoFinal1.ipynb**: Notebook principal con extracción de datos climáticos, normalización y análisis exploratorio
 - **predicciones.ipynb**: Modelos de Machine Learning y evaluación de predicciones
 
+### Documentación Visual
+
+- **VISUALIZACIONES_DASHBOARD.md**: Galería con capturas de pantalla de todas las visualizaciones del dashboard, útil para revisar el contenido sin ejecutar el código
+
 ## Requisitos Previos
 
 - **Python 3.8 o superior** (recomendado 3.11)
@@ -75,8 +81,8 @@ El dashboard incluye las siguientes secciones:
 Si tienes git instalado:
 
 ```bash
-git clone https://github.com/jimenami/procesos-y-visualizacion.git
-cd cosas
+git clone https://github.com/MalenaSancho/procesos-y-visualizacion.git
+cd procesos-y-visualizacion
 ```
 
 O descarga el proyecto como archivo ZIP y descomprímelo.
