@@ -1,20 +1,3 @@
-# Dashboard Interactivo - La Liga 24-25
-
-Dashboard interactivo desarrollado con Streamlit para el análisis de datos de la temporada 24-25 de La Liga española. Incluye análisis de resultados, clima, asistencia, apuestas deportivas y modelos predictivos de Machine Learning.
-
-## Descripción del Proyecto
-
-Este proyecto proporciona un análisis completo de la temporada 24-25 de La Liga española mediante:
-
-- **Visualizaciones interactivas** de partidos, resultados y estadísticas
-- **Análisis climático** con emojis del tiempo y códigos WMO
-- **Mapas interactivos** de estadios y asistencia
-- **Análisis de apuestas** y sorpresas deportivas
-- **Modelos de Machine Learning** para:
-  - Predicción de resultados de partidos (Victoria Local/Empate/Victoria Visitante)
-  - Predicción de asistencia a partidos
-- **Google Trends** para análisis del "hype" de los equipos
-
 ## Estructura del Proyecto
 
 ```
@@ -45,7 +28,7 @@ procesos-y-visualizacion/
 
 ### Dashboard Interactivo (dashboard.py)
 
-El dashboard incluye las siguientes secciones:
+Dashboard interactivo desarrollado con Streamlit para el análisis de datos de la temporada 24-25 de La Liga. El dashboard incluye las siguientes secciones:
 
 1. **Resultados**: Análisis de goles, resultados por equipo y estadísticas generales
 2. **Apuestas**: Visualización de cuotas, sorpresas deportivas y análisis de probabilidades
@@ -59,6 +42,8 @@ El dashboard incluye las siguientes secciones:
    - Matrices de confusión y análisis de errores
    - Distribución de probabilidades y residuos
 
+Enlace para la visualización del dashboard interactivo sin necesidad de ejecutar el código: https://dashboardtrabajofinal.streamlit.app/ 
+
 ### Notebooks de Análisis
 
 - **TrabajoFinal1.ipynb**: Notebook principal del preproceso y recolección de los datos
@@ -67,7 +52,6 @@ El dashboard incluye las siguientes secciones:
 
 ### Documentación Visual
 
-- Enlace para la visualización del dashboard interactivo sin necesidad de ejecutar el código: https://dashboardtrabajofinal.streamlit.app/ 
 - **VISUALIZACIONES_DASHBOARD.md**: Galería con capturas de pantalla de todas las visualizaciones del dashboard (para la selección de todos los equipos durante toda la temporada), útil para revisar el contenido sin ejecutar el código 
 
 ## Requisitos Previos
