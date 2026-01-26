@@ -3,7 +3,7 @@
 ```
 procesos-y-visualizacion/
 ├── README.md                          # Este archivo
-├── Informe Final.pdf                  # Informe del Proyecto presentado
+├── Informe.pdf                        # Informe del Proyecto presentado
 ├── requirements.txt                   # Dependencias del proyecto
 ├── dashboard.py                       # Dashboard principal de Streamlit
 ├── filename.hpl                       # Archivo hop de la unión de csv
